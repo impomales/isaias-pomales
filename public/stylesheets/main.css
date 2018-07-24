@@ -1,3 +1,20 @@
+:root {
+  --dark-blue: #091d34;
+  --blue: #236ab9;
+  --dark-green: #559e54;
+  --green: #98ca32;
+  --light-green: #ebf7d4;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 0.5em;
+  width: 100vw;
+  background-color: var(--dark-green);
+}
+
 .footer-nav-img {
   width: 2em;
   height: 2em;
