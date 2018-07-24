@@ -4,6 +4,7 @@
   --dark-green: #559e54;
   --green: #98ca32;
   --light-green: #ebf7d4;
+  font-family: sans-serif;
 }
 
 header {
@@ -13,6 +14,31 @@ header {
   padding: 0.5em;
   width: 100vw;
   background-color: var(--dark-green);
+}
+
+#header-nav {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.header-nav-button {
+  background-color: var(--dark-green);
+  color: var(--light-green);
+  border: none;
+  outline: none;
+  font-size: 1.2em;
+  transition: box-shadow 0.25s, transform 0.25s;
+}
+
+.header-nav-button:hover {
+  box-shadow: 0px 2px 4px rgba(3, 3, 3, 0.5);
+  transform: translate(0, -1px);
+  cursor: pointer;
+}
+
+.header-nav-button:active {
+  box-shadow: none;
+  transform: translate(0, 1px);
 }
 
 .footer-nav-img {
