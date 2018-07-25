@@ -1,4 +1,123 @@
+:root {
+  --dark-blue: #091d34;
+  --blue: #236ab9;
+  --dark-green: #559e54;
+  --green: #98ca32;
+  --light-green: #ebf7d4;
+  --dark-grey: rgba(0, 0, 0, 0.85);
+  --grey: rgba(0, 0, 0, 0.5);
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 0.5em;
+  width: 100vw;
+  box-shadow: 0px 1px 6px var(--dark-grey);
+  background-color: var(--dark-green);
+}
+
+#header-nav {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.header-nav-button {
+  background-color: var(--dark-green);
+  color: var(--light-green);
+  font-family: 'Open Sans', sans-serif;
+  border: none;
+  outline: none;
+  font-size: 1.2em;
+  transition: box-shadow 0.25s, transform 0.25s, color 0.25s;
+}
+
+.header-nav-button:hover {
+  box-shadow: 0px 2px 4px var(--grey);
+  transform: translate(0, -1px);
+  color: white;
+  cursor: pointer;
+}
+
+.header-nav-button:active {
+  box-shadow: none;
+  transform: translate(0, 1px);
+}
+
+main {
+  margin-top: 2.5em;
+  margin-left: 0;
+  margin-right: 0;
+  position: relative;
+  z-index: -1;
+}
+
+#home {
+  background-color: var(--green);
+}
+
+#home-text {
+  position: absolute;
+  top: 25vh;
+  width: 100vw;
+  text-align: center;
+  font-family: Raleway, sans-serif;
+  color: var(--light-green);
+  background-color: var(--blue);
+  box-shadow: 0px 2px 6px var(--grey);
+  opacity: 0.9;
+}
+
+#home-text h1 {
+  font-weight: bolder;
+  font-size: 2em;
+}
+
+#home-text h2 {
+  font-style: italic;
+}
+
+#home-img {
+  height: 100vh;
+  opacity: 0.65;
+}
+
+.main-section {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  padding: 0.5em;
+  background-color: var(--dark-green);
+}
+
+#footer-nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.footer-nav-link {
+  margin-right: 2em;
+}
+
+.footer-nav-link:hover {
+  cursor: pointer;
+}
+
 .footer-nav-img {
-  width: 2em;
-  height: 2em;
+  height: 1.5em;
+  width: 1.5em;
 }
