@@ -93,6 +93,7 @@ main {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  align-items: center;
 }
 
 #about-images {
@@ -102,6 +103,18 @@ main {
   grid-template-rows: auto auto;
   align-content: center;
   justify-content: center;
+}
+
+#about-text {
+  background-color: var(--dark-blue);
+  color: var(--green);
+  width: 40vw;
+  padding: 2em;
+  box-shadow: 2px 2px 6px var(--grey);
+}
+
+#about-text p {
+  text-align: center;
 }
 
 #me {
