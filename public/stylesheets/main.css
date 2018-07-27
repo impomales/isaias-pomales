@@ -149,7 +149,7 @@ main {
 #projects {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   padding: 1em 0;
   background-color: var(--blue);
@@ -162,10 +162,11 @@ main {
   margin: 1em;
   width: 75vw;
   border: 2px solid var(--light-green);
+  box-shadow: 0 4px 8px var(--dark-grey);
 }
 
 .project-thumbnail {
-  height: 20vh;
+  height: 15vh;
   border: 2px solid var(--light-green);
   border-left: none;
 }
