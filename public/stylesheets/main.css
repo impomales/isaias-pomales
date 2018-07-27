@@ -283,3 +283,13 @@ footer {
   height: 1.5em;
   width: 1.5em;
 }
+
+@media screen and (max-width: 1000px) {
+  .main-section {
+    height: auto;
+  }
+
+  #about {
+    flex-direction: column;
+  }
+}
