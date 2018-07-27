@@ -88,6 +88,7 @@ main {
   opacity: 0.65;
 }
 
+<<<<<<< HEAD
 #about {
   background-color: var(--light-green);
   display: flex;
@@ -207,6 +208,8 @@ main {
   cursor: pointer;
 }
 
+=======
+>>>>>>> master
 .main-section {
   display: flex;
   flex-direction: column;
