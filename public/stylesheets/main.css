@@ -55,6 +55,7 @@ main {
   margin-top: 2.5em;
   margin-left: 0;
   margin-right: 0;
+  position: relative;
 }
 
 #home {
@@ -215,6 +216,9 @@ main {
 
 #contact {
   background-color: var(--dark-blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #contact-form {
@@ -222,7 +226,6 @@ main {
   flex-direction: column;
   color: var(--light-green);
   width: 50vw;
-  margin: auto;
   font-weight: bold;
 }
 
