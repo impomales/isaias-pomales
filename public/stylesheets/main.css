@@ -292,5 +292,16 @@ footer {
 
   #about {
     flex-direction: column;
+    padding: 2em 0;
+  }
+
+  #about-text {
+    width: 75vw;
+    margin-top: 2em;
+  }
+
+  #contact {
+    padding-top: 2em;
+    padding-bottom: 4em;
   }
 }
