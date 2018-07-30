@@ -21,6 +21,7 @@ header {
   width: 100vw;
   box-shadow: 0px 1px 6px var(--dark-grey);
   background-color: var(--dark-green);
+  z-index: 2;
 }
 
 #header-nav {
@@ -55,7 +56,6 @@ main {
   margin-left: 0;
   margin-right: 0;
   position: relative;
-  z-index: -1;
 }
 
 #home {
@@ -85,6 +85,7 @@ main {
 
 #home-img {
   height: 100vh;
+  width: 100vw;
   opacity: 0.65;
 }
 
@@ -209,14 +210,15 @@ main {
 }
 
 .main-section {
-  display: flex;
-  flex-direction: column;
   height: 100vh;
   width: 100vw;
 }
 
 #contact {
   background-color: var(--dark-blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #contact-form {
@@ -224,7 +226,6 @@ main {
   flex-direction: column;
   color: var(--light-green);
   width: 50vw;
-  margin: auto;
   font-weight: bold;
 }
 
@@ -282,4 +283,53 @@ footer {
 .footer-nav-img {
   height: 1.5em;
   width: 1.5em;
+}
+
+@media screen and (max-width: 1000px) {
+  .main-section {
+    height: auto;
+  }
+
+  #about {
+    flex-direction: column;
+    padding: 2em 0;
+  }
+
+  #about-text {
+    width: 75vw;
+    margin-top: 2em;
+  }
+
+  #contact {
+    padding-top: 2em;
+    padding-bottom: 4em;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .project {
+    flex-direction: column;
+  }
+
+  .contact-form-group {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #contact-form-btn {
+    align-self: center;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #me {
+    height: 20vh;
+  }
+  #bruno {
+    height: 15vh;
+  }
+  #spike, #fitzy {
+    height: 15vh;
+  }
 }
