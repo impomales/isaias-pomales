@@ -29,7 +29,7 @@ header {
   justify-content: space-evenly;
 }
 
-.header-nav-button {
+.header-nav-btn {
   background-color: var(--dark-green);
   color: var(--light-green);
   font-family: 'Open Sans', sans-serif;
@@ -39,14 +39,14 @@ header {
   transition: box-shadow 0.25s, transform 0.25s, color 0.25s;
 }
 
-.header-nav-button:hover {
+.header-nav-btn:hover {
   box-shadow: 0px 2px 4px var(--grey);
   transform: translate(0, -1px);
   color: white;
   cursor: pointer;
 }
 
-.header-nav-button:active {
+.header-nav-btn:active {
   box-shadow: none;
   transform: translate(0, 1px);
 }
@@ -212,6 +212,8 @@ main {
 .main-section {
   height: 100vh;
   width: 100vw;
+  opacity: 1;
+  transition: opacity 750ms;
 }
 
 #contact {
@@ -283,6 +285,21 @@ footer {
 .footer-nav-img {
   height: 1.5em;
   width: 1.5em;
+}
+
+#home.fade,
+#about.fade,
+#projects.fade,
+#contact.fade {
+  /* display: none; */
+  opacity: 0;
+}
+
+#home.hidden,
+#about.hidden,
+#projects.hidden,
+#contact.hidden {
+  display: none;
 }
 
 @media screen and (max-width: 1000px) {

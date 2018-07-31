@@ -9,15 +9,16 @@
   <link rel="icon" type="image/ico" href="favicon.ico">
   <link rel="stylesheet" type="text/css" href="/stylesheets/main.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i|Raleway:400,400i,700,700i" rel="stylesheet">
+  <script src="scripts/index.js" defer></script>
 </head>
 
 <body>
   <header>
     <nav id="header-nav">
-      <button class="header-nav-button">Home</button>
-      <button class="header-nav-button">About</button>
-      <button class="header-nav-button">Projects</button>
-      <button class="header-nav-button">Contact</button>
+      <button id="home-btn" class="header-nav-btn">Home</button>
+      <button id="about-btn" class="header-nav-btn">About</button>
+      <button id="projects-btn" class="header-nav-btn">Projects</button>
+      <button id="contact-btn" class="header-nav-btn">Contact</button>
     </nav>
   </header>
 
@@ -30,7 +31,7 @@
       </div>
     </section>
 
-    <section id="about" class="main-section">
+    <section id="about" class="main-section hidden">
       <div id="about-images">
         <img id="me" class="about-images-img" src="images/profile.jpg" alt="isaias">
         <img id="bruno" class="about-images-img" src="images/bruno.jpg" alt="bruno">
@@ -61,7 +62,7 @@
       </div>
     </section>
 
-    <section id="projects" class="main-section">
+    <section id="projects" class="main-section hidden">
       <div class="project">
         <img class="project-thumbnail" src="images/space-cowboy.png" alt="space-cowboy">
         <div class="project-description">
@@ -108,7 +109,7 @@
       </div>
     </section>
 
-    <section id="contact" class="main-section">
+    <section id="contact" class="main-section hidden">
       <form id="contact-form">
         <span class="contact-form-group">
           <label for="first-name">First Name: </label>
