@@ -305,11 +305,16 @@ footer {
 @media screen and (max-width: 1000px) {
   .main-section {
     height: auto;
+    min-height: 100vh;
   }
 
   #about {
     flex-direction: column;
-    padding: 2em 0;
+  }
+
+  #about,
+  #projects {
+    padding: 2em 0 4em 0;
   }
 
   #about-text {
@@ -346,7 +351,8 @@ footer {
   #bruno {
     height: 15vh;
   }
-  #spike, #fitzy {
+  #spike,
+  #fitzy {
     height: 15vh;
   }
 }

@@ -110,26 +110,26 @@
     </section>
 
     <section id="contact" class="main-section hidden">
-      <form id="contact-form">
+      <form id="contact-form" action="/contact" method="post" role="form">
         <span class="contact-form-group">
           <label for="first-name">First Name: </label>
-          <input id="first-name" type="text" class="contact-form-input">
+          <input id="first-name" name="firstName" type="text" class="contact-form-input">
         </span>
         <span class="contact-form-group">
           <label for="last-name">Last Name: </label>
-          <input id="last-name" type="text" class="contact-form-input">
+          <input id="last-name" name="lastName" type="text" class="contact-form-input">
         </span>
         <span class="contact-form-group">
           <label for="email">Email: </label>
-          <input id="email" type="text" class="contact-form-input">
+          <input id="email" name="email" type="text" class="contact-form-input">
         </span>
         <span class="contact-form-group">
           <label for="phone">Phone: </label>
-          <input id="phone" type="text" class="contact-form-input">
+          <input id="phone" name="phone" type="text" class="contact-form-input">
         </span>
         <span class="contact-form-group">
           <label for="message">Message: </label>
-          <textarea id="message" class="contact-form-input"></textarea>
+          <textarea id="message" name="message" class="contact-form-input"></textarea>
         </span>
         <button id="contact-form-btn" type="submit">Send</button>
       </form>
