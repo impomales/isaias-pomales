@@ -11,6 +11,7 @@
 
 body {
   margin: 0;
+  background-color: var(--light-green);
 }
 
 header {
@@ -26,7 +27,7 @@ header {
 
 #header-nav {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 
 .header-nav-btn {
@@ -213,7 +214,7 @@ main {
   height: 100vh;
   width: 100vw;
   opacity: 1;
-  transition: opacity 750ms;
+  transition: opacity 0.5s;
 }
 
 #contact {
@@ -285,14 +286,6 @@ footer {
 .footer-nav-img {
   height: 1.5em;
   width: 1.5em;
-}
-
-#home.fade,
-#about.fade,
-#projects.fade,
-#contact.fade {
-  /* display: none; */
-  opacity: 0;
 }
 
 #home.hidden,
